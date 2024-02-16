@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="{{ title_width + progress_width }}" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+<svg width="100%" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
   <linearGradient id="a" x2="0" y2="100%">
     <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
     <stop offset="1" stop-opacity=".1"/>
@@ -11,7 +11,7 @@
   {% if title %}
     <path fill="{{ progress_color }}" d="M{{ title_width }} 0h4v20h-4z" />
   {% endif %}
-  <rect rx="4" width="{{ title_width + progress_width }}" height="20" fill="url(#a)" />
+  <rect rx="4" width="100%" height="20" fill="url(#a)" />
 
   {% if title %}
     <g fill="#fff" text-anchor="left" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
